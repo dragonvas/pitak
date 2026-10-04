@@ -1,0 +1,36 @@
+<RegisterScreen>:
+    name: "main"
+
+    BoxLayout:
+        orientation: "vertical"
+        padding: 25
+        spacing: 15
+
+        Label:
+            text: "Логин"
+
+        TextInput:
+            id: login
+            multiline: False
+
+        Label:
+            text: "Пароль"
+
+        TextInput:
+            id: password
+            multiline: False
+
+        Label:
+            text: "Повторите пароль"
+
+        TextInput:
+            id: password_again
+            multiline: False
+
+        Button:
+            text: "Зарегистрироваться"
+            on_press: root.reg_button()
+
+        Button:
+            text: "Зарегистрироваться"
+            on_press: root.AutorizationBack_button()
