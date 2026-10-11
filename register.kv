@@ -1,10 +1,14 @@
 <RegisterScreen>:
-    name: "main"
+    name: "Register"
 
     BoxLayout:
         orientation: "vertical"
-        padding: 25
+        padding: 100
         spacing: 15
+        Label:
+            id: koka
+            text: "Зарегистрируйтесь"
+            font_size: 50
 
         Label:
             text: "Логин"
@@ -32,5 +36,5 @@
             on_press: root.reg_button()
 
         Button:
-            text: "Зарегистрироваться"
+            text: "Вернутся к авторизации"
             on_press: root.AutorizationBack_button()
